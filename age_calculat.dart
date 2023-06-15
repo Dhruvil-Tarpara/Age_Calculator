@@ -29,13 +29,12 @@ class Age {
     birthMonth = int.parse(stdin.readLineSync()!);
     stdout.write("Enter your Birth year : ");
     birthYear = int.parse(stdin.readLineSync()!);
-    
+    String y = birthYear.toString();
 
-    if (birthMonth <= 12 && birthDay <= 31 && birthYear.bitLength <= 4) {
+    if (birthDay <= 31 && birthMonth <= 12 && y.length <=4) {
       calculateAge();
-    }
-    else{
-      print("Invalid input.....");
+    } else {
+      print("Invalid ....");
     }
   }
 
